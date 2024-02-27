@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta width="device-width" initial-scale=1>
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+    <h1 id="title">Potato Survey</h1>
+    <p id="description">Let us know more about your opinion on potatoes!</p>
+    <form id="survey-form">
+    <div>
+      <label id="name-label" for="name">Name </label>
+      <input id="name" type="text" placeholder="Your name" required>
+      <label id="email-label" for="email">Email </label>
+      <input id="email" type="email" placeholder="Your Email" required>
+      <label id="number-label" for="number">Age </label>
+      <input id="number" type="number" min=2 max=5 placeholder="Your age(optional)">
+      <label id="dropdown-label">What's your favourite way to cook potatoes?</label>
+      <select id="dropdown" required>
+        <option disabled selected value>Select</option>
+        <option value="Boiling">Boiling</option>
+        <option value="Frying">Frying</option>
+        <option value"Baking">Baking</option>
+      </select>
+    </div>
+    <div>
+      <p>Do you usually cook potatoes</p>
+      <label id="radio-yes-label" for="radio-yes"><input type="radio" name="radio" id="radio-yes" value="Yes" checked> Yes</label> 
+      <label id="radio-no-label" for="radio-no" Value="No"><input type="radio" name="radio" id="radio-no" value="No"> No</label>
+      
+      <p>Where do you usually plant the potatoes?</p>
+      <label id="checkbox-pot-label" for="checkbox-pot" >
+        <input type="checkbox" id="checkbox-pot" name="checkbox" value="pot">
+        Pot
+      </label>
+      <label id="checkbox-ground-label" for="checkbox-ground" >
+        <input type="checkbox" id="checkbox-ground" name="checkbox" value="ground">
+        Ground
+      </label>
+      <label id="checkbox-countryside-label" for="checkbox-countryside" >
+        <input type="checkbox" id="checkbox-countryside" name="checkbox" value="countryside">
+        Countryside
+      </label>
+      <label id="checkbox-countryside-label" for="checkbox-countryside" >
+        <input type="checkbox" id="checkbox-none" name="checkbox" value="none">
+        I don't plant my own potatoes
+      </label>
+    </div>
+      <p>Extra information</p>
+      <textarea name="comment" placeholder="Do you want us to know something else?(optional)"></textarea>
+    <div class="button">
+      <button id="submit" type="submit">Submit</button>
+      </div>
+    </form>
+    </div>
+  </body>
+<html>
